@@ -1,6 +1,7 @@
   *{
     margin: 0;
     padding: 0;
+   padding-top: 18px;
 }
 header h1{
     align-items: center;
@@ -8,10 +9,14 @@ header h1{
     justify-content: center;
     background-color: blueviolet;
     color: white;
-   
     padding: 1rem;
     font-size: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
 }
 
 
@@ -45,6 +50,7 @@ header h1{
     justify-content: center;
     cursor: pointer;
     border-radius: .9rem;
+ padding: 0;
 }
 #o{
     border: .15rem solid black;
