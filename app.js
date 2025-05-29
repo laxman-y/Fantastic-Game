@@ -44,8 +44,6 @@ function checkWinner() {
         }
     }
 
-    
-
     if (roundWon) {
         statusText.textContent = `${currentPlayer} wins! 🎉`;
         if(statusText.textContent==="X wins! 🎉"){
@@ -72,7 +70,9 @@ function checkWinner() {
 function resetGame() {
     board = ["", "", "", "", "", "", "", "", ""];
     gameActive = true;
-    currentPlayer = "X";
-    statusText.textContent = "Player X's turn";
+   
+    currentPlayer = currentPlayer === "X" ? "O" : "X";
+    statusText.textContent = `Player ${currentPlayer}'s turn`;
     cells.forEach(cell => (cell.textContent = ""));
 }
+
